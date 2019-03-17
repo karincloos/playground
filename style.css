@@ -1,0 +1,775 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: "B612 Mono";
+    margin: 0;
+}
+nav a {
+    color: pink;
+    margin: 0.2rem 0 0.2rem 1rem;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    max-width: none;
+    margin: 0;
+    /*    background-color: red;*/
+}
+h2 {
+    color: white;
+    margin-left: 1rem;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*    background-color: lightblue;*/
+    justify-content: center;
+}
+.box {
+    background-color: lightgrey;
+    width: 320px;
+    text-align: center;
+    margin: 0.5rem;
+}
+.content {
+    background-color: white;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*___________________box 1_____________________*/
+
+.box1 .content div {
+    width: 150px;
+    height: 150px;
+    /*    border-radius: 50%;*/
+}
+.box1 .first {
+    background: repeating-linear-gradient(to left, rgba(255, 0, 255, 0.7), rgba(5, 200, 0, 0.7), rgba(255, 255, 0, 0.7)20%);
+}
+.box1 .second {
+    background: repeating-linear-gradient(to top, rgba(0, 0, 255, 0.7), rgba(5, 200, 0, 0.7)20%, rgba(255, 50, 247, 0.7)20%);
+}
+.box1 .third {
+    background: repeating-linear-gradient(to left, rgba(255, 0, 255, 0.7), rgba(5, 200, 0, 0.7), rgba(255, 255, 0, 0.7)20%), repeating-linear-gradient(to top, rgba(0, 0, 255, 0.7), rgba(5, 200, 0, 0.7)20%, rgba(255, 50, 247, 0.7)20%);
+}
+.box1 .fourth {
+    background: repeating-linear-gradient(to left, rgba(255, 0, 255, 0.6)20%, rgba(5, 200, 0, 0.5)20%, rgba(255, 50, 247, 0.4))20%, linear-gradient(to top, rgba(255, 0, 0, 1)20%, rgba(255, 100, 0, 0.5)20%, rgba(255, 50, 247, 1)20%);
+}
+
+/*___________________box 2_____________________*/
+
+.box2 .content div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.box2 .first {
+    background-image: radial-gradient(magenta 10%, white 20%, lime 30%, black 40%);
+}
+.box2 .second {
+    background-image: repeating-radial-gradient(at top left, red, orange, yellow, lime, green 10%, aqua, blue, magenta);
+}
+.box2 .third {
+    background: repeating-linear-gradient(to left, rgba(255, 0, 255, 0.5), rgba(5, 200, 0, 0.5), rgba(255, 255, 0, 0.5)50%), repeating-radial-gradient(rgba(0, 0, 255, 1), rgba(5, 200, 0, 1)30%, rgba(255, 50, 247, 1)30%);
+}
+.box2 .fourth {
+    background: repeating-linear-gradient(to top left, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1)5%);
+}
+
+/*___________________box 3_____________________*/
+
+.box3 .content div {
+    width: 150px;
+    height: 150px;
+    /*    border-radius: 50%;*/
+}
+.box3 .first {
+    background: repeating-linear-gradient(to top left, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)5%), repeating-linear-gradient(to top right, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1)5%);
+}
+.box3 .second {
+    background: repeating-radial-gradient( circle at bottom left, rgba(0, 0, 0, 0.5), rgba(128, 128, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(255, 255, 255, 0.5) 40px), repeating-radial-gradient( circle at bottom right, black, olive, yellow, white 40px), repeating-radial-gradient( circle at right, black, maroon, pink, white 40px);
+}
+.box3 .third {
+    background: repeating-radial-gradient( circle at bottom right, rgba(0, 0, 0, 0.5), rgba(128, 0, 0, 0.5), rgba(255, 192, 203, 0.5), rgba(255, 255, 255, 0.5) 40px), repeating-radial-gradient( circle at 0 0, black, maroon, pink, white 40px), repeating-radial-gradient( circle at 0 0, black, maroon, pink, white 40px);
+}
+.box3 .fourth {
+    background: repeating-radial-gradient( circle at right, rgba(0, 0, 0, 0.5), rgba(128, 0, 0, 0.5), rgba(255, 192, 203, 0.5), rgba(255, 255, 255, 0.5) 10%), repeating-radial-gradient( circle at left, black, maroon, pink, white 10%);
+}
+
+/*___________________box 4_____________________*/
+
+.box4 .content div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.box4 .first {
+    background: repeating-radial-gradient( circle at bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(173, 216, 230, 0.5)10%, rgba(255, 255, 255, 0.5) 15%), repeating-radial-gradient( circle at top, rgba(0, 0, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(173, 216, 230, 0.5)10%, rgba(255, 255, 255, 0.5) 15%), repeating-radial-gradient( circle at right, rgba(0, 0, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(173, 216, 230, 0.5)10%, rgba(255, 255, 255, 0.5) 15%), repeating-radial-gradient( circle at left, black, blue, lightblue 10%, white 15%);
+}
+.box4 .second {
+    background: repeating-linear-gradient(to top right, rgba(0, 255, 0, 1), rgba(0, 0, 0, 1)50%);
+}
+.box4 .third {
+    background: repeating-linear-gradient(to top left, rgba(255, 0, 0, 1), rgba(255, 255, 255, 1)50%);
+}
+.box4 .fourth {
+    background: repeating-linear-gradient(to top left, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5)50%), repeating-linear-gradient(to top right, rgba(0, 255, 0, 1), rgba(0, 0, 0, 1)50%);
+}
+
+/*___________________box 5_____________________*/
+
+.box5 .content div {
+    width: 150px;
+    height: 150px;
+    /*    border-radius: 50%;*/
+}
+.box5 .first {
+    background: repeating-linear-gradient(to top right, rgba(255, 255, 0, 1), rgba(0, 0, 0, 1)33%);
+}
+.box5 .second {
+    background: repeating-linear-gradient(to top left, rgba(153, 0, 204, 1), rgba(255, 255, 255, 1)33%);
+}
+.box5 .third {
+    background: repeating-linear-gradient(to top right, rgba(255, 255, 0, 0.5), rgba(0, 0, 0, 0.5)33%), repeating-linear-gradient(to top left, rgba(153, 0, 204, 1), rgba(255, 255, 255, 1)33%);
+}
+.box5 .fourth {
+    background: repeating-radial-gradient(circle at center, rgba(255, 255, 0, 0.5), rgba(0, 0, 0, 0.5)50%), repeating-linear-gradient(to top, rgba(153, 0, 204, 1), rgba(255, 255, 255, 1)50%);
+}
+
+/*___________________box 6_____________________*/
+
+.box6 .content div {
+    width: 150px;
+    height: 150px;
+    /*        border-radius: 50%;*/
+}
+.box6 .first {
+    background: repeating-linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.6)50%), repeating-linear-gradient(to bottom, rgba(0, 255, 0, 0.5), rgba(0, 0, 0, 0.6)50%), repeating-linear-gradient(to top left, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5)50%), repeating-linear-gradient(to top right, rgba(0, 255, 0, 1), rgba(0, 0, 0, 1)50%);
+}
+.box6 .second {
+    background: repeating-radial-gradient( rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.6)20%);
+}
+.box6 .third {
+    background: repeating-radial-gradient( rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.6)50%);
+}
+.box6 .fourth {
+    background: repeating-radial-gradient(circle at 0 0, rgba(100, 100, 0, 0.5), rgba(255, 255, 200, 0.6)10%);
+}
+
+/*___________________box 7_____________________*/
+
+.box7 .content {
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.box7 .content div {
+    width: 100px;
+    height: 150px;
+    /*        border-radius: 50%;*/
+}
+.box7 .first {
+    background: repeating-radial-gradient(circle at bottom right, rgba(100, 100, 0, 0.5), rgba(255, 255, 200, 0.6)25%);
+}
+.box7 .second {
+    background: repeating-radial-gradient(circle at bottom left, rgba(100, 100, 0, 0.5), rgba(255, 255, 200, 0.6)50%);
+}
+.box7 .third {
+    background: repeating-radial-gradient(circle at top right, rgba(255, 255, 200, 0.6), rgba(100, 100, 0, 0.6) 50%);
+}
+.box7 .fourth {
+    background: repeating-radial-gradient(circle at 0 0, rgba(255, 255, 200, 0.6), rgba(100, 100, 0, 0.6) 25%);
+}
+
+/*___________________box 8_____________________*/
+
+.box8 .content div {
+    width: 150px;
+    height: 150px;
+    /*        border-radius: 50%;*/
+}
+.box8 .first {
+    background-image: repeating-radial-gradient(red, magenta, pink, aqua, blue 30%);
+}
+.box8 .second {
+    background-image: repeating-radial-gradient(red, magenta, pink, aqua, blue 30%);
+    background-size: 25% 25%;
+}
+.box8 .third {
+    background-image: repeating-linear-gradient(to top right, red, aqua 20%);
+}
+.box8 .fourth {
+    background-image: repeating-linear-gradient(to top right, red, aqua 40%);
+    background-size: 20% 20%;
+}
+
+/*___________________box 9_____________________*/
+
+.box9 .content div {
+    width: 150px;
+    height: 150px;
+    /*        border-radius: 50%;*/
+}
+.box9 .content .first {
+    background-image: linear-gradient(to top right, red, aqua 50%);
+    background-size: 50% 100%;
+}
+.box9 .second {
+    background-image: repeating-linear-gradient(to top left, red, aqua 70%);
+    background-size: 50% 50%;
+}
+.box9 .third {
+    background-image: repeating-linear-gradient(to top left, red, aqua 20%);
+    background-size: 10%;
+}
+.box9 .fourth {
+    background-image: repeating-linear-gradient(to top left, red, aqua 0100%);
+    background-size: 10%;
+}
+
+/*___________________box 10_____________________*/
+
+.box10 .content div {
+    width: 150px;
+    height: 150px;
+    /*        border-radius: 50%;*/
+}
+.box10 .first {
+    background-image: linear-gradient( 135deg, #FFCF71 10%, #2376DD 100%);
+}
+.box10 .second {
+    background-image: repeating-radial-gradient(at bottom left, #FFCF71 30%, #2376DD 100%);
+    background-size: 50% 50%;
+}
+.box10 .third {
+    background-image: repeating-linear-gradient(#FFCF71 10%, #2376DD 90%);
+    background-size: 10%;
+}
+.box10 .fourth {
+    background-image: repeating-linear-gradient(270deg, #FFCF71 2%, #2376DD 62%);
+    background-size: 60%;
+}
+
+/*___________________box 11_____________________*/
+
+.box11 .content div {
+    width: 150px;
+    height: 150px;
+    /*        border-radius: 50%;*/
+}
+.box11 .first {
+    background-image: linear-gradient( 135deg, #EECE13 10%, #B210FF 100%);
+}
+.box11 .second {
+    background-image: repeating-radial-gradient( #EECE13 10%, #B210FF 100%);
+}
+.box11 .third {
+    background-image: repeating-radial-gradient( #EECE13 30%, #B210FF 1000%);
+}
+.box11 .fourth {
+    background-image: repeating-radial-gradient(at 0 0, rgba(238, 206, 19, 0.5) 0%, rgba(178, 16, 255, 0.5) 70%), repeating-radial-gradient(at top right, #EECE13 0%, #B210FF 70%);
+}
+
+/*___________________box 12_____________________*/
+
+.box12 .content div {
+    width: 150px;
+    height: 150px;
+    /*        border-radius: 50%;*/
+}
+.box12 .first {
+    background-image: linear-gradient( 230deg, rgba(160, 254, 101, 1) 10%, rgba(250, 1, 109, 1) 100%);
+}
+.box12 .second {
+    background-image: repeating-radial-gradient(at 0 0, rgba(160, 254, 101, 0.5) 0%, rgba(250, 1, 109, 0.5) 60%), repeating-radial-gradient(at bottom right, rgba(160, 254, 101, 0.5) 0%, rgba(250, 1, 109, 0.5) 60%), repeating-radial-gradient(at 0 bottom, rgba(160, 254, 101, 0.5) 0%, rgba(250, 1, 109, 0.5) 60%), repeating-radial-gradient(at top right, rgba(160, 254, 101, 0.5) 0%, rgba(250, 1, 109, 0.5)60%);
+}
+.box12 .third {
+    background-image: repeating-radial-gradient(at 0 0, rgba(160, 254, 101, 0.5) 20%, rgba(250, 1, 109, 0.5) 70%), repeating-radial-gradient(at bottom right, rgba(160, 254, 101, 0.5) 20%, rgba(250, 1, 109, 0.5) 70%), repeating-radial-gradient(at bottom left, rgba(160, 254, 101, 0.5) 40%, rgba(250, 1, 109, 0.5) 10%), repeating-radial-gradient(at top right, rgba(160, 254, 101, 0.5) 40%, rgba(250, 1, 109, 0.5)10%);
+}
+.box12 .fourth {
+    background-image: radial-gradient(#FA016D 5%, #A0FE65 10%, #FA016D 15%, #A0FE65 20%, #FA016D 25%, #A0FE65 30%, #FA016D 00%);
+}
+
+/*___________________box 13_____________________*/
+
+.box13 .content div {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+    /*    border-radius: 50%;*/
+}
+.box13 .fourth {
+    border-bottom: 200px solid red;
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-left: 150px solid rgba(0, 0, 0, 0);
+    border-right: 150px solid rgba(0, 0, 0, 0);
+}
+
+/*___________________box 14_____________________*/
+
+.box14 .content div {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+    /*    border-radius: 50%;*/
+}
+.box14 .fourth {
+    border-bottom: 200px solid lightblue;
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+}
+
+/*___________________box 15_____________________*/
+
+.box15 .content div {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+    /*        border-radius: 50%;*/
+}
+.box15 .fourth {
+    border-bottom: 200px solid pink;
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-left: 0px solid rgba(0, 0, 0, 0);
+    border-right: 200px solid rgba(0, 0, 0, 0);
+}
+
+/*___________________box 16_____________________*/
+
+.box16 .content div {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.box16 .fourth {
+    border-bottom: 200px solid #5deab9;
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-left: 150px solid rgba(0, 0, 0, 0);
+    border-right: 150px solid rgba(0, 0, 0, 0);
+}
+
+/*___________________box 17_____________________*/
+
+.box17 .content div {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+.box17 .fourth {
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-top: 200px solid orange;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+}
+
+/*___________________box 18_____________________*/
+
+.box18 .content div {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+    border-bottom-right-radius: 200px;
+}
+.box18 .fourth {
+    border-bottom: 200px solid purple;
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-left: 0px solid rgba(0, 0, 0, 0);
+    border-right: 200px solid rgba(0, 0, 0, 0);
+}
+
+/*___________________box 19_____________________*/
+
+.box19 .content div {
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    /*    border-bottom-right-radius: 200px;*/
+}
+.box19 .fourth {
+    border-bottom: 150px solid orange;
+    border-top: 150px solid aqua;
+    border-left: 150px solid pink;
+    border-right: 150px solid red;
+}
+
+/*___________________box 20_____________________*/
+
+.box20 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /*        border-bottom-right-radius: 200px;*/
+}
+.box20 .fourth {
+    border-bottom: 50px solid orange;
+    border-top: 100px solid aqua;
+    border-left: 50px solid purple;
+    border-right: 200px solid pink;
+}
+
+/*___________________box 21_____________________*/
+
+.box21 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /*        border-bottom-right-radius: 200px;*/
+}
+.box21 .fourth {
+    border-bottom: 50px solid limegreen;
+    border-top: 200px solid lightblue;
+    border-left: 200px solid olive;
+    border-right: 50px solid green;
+}
+
+/*___________________box 22_____________________*/
+
+.box22 .content div {
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+}
+.box22 .fourth {
+    border-bottom: 150px solid orange;
+    border-top: 150px solid aqua;
+    border-left: 150px solid pink;
+    border-right: 150px solid red;
+}
+
+/*___________________box 23_____________________*/
+
+.box23 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+}
+.box23 .fourth {
+    border-left: 100px solid olive;
+    border-right: 200px solid pink;
+}
+
+/*___________________box 24_____________________*/
+
+.box24 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-bottom-right-radius: 50%;
+}
+.box24 .fourth {
+    border-bottom: 50px solid limegreen;
+    border-right: 50px solid green;
+}
+
+/*___________________box 25_____________________*/
+
+.box25 .content div {
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+}
+.box25 .fourth {
+    border-bottom: 150px solid purple;
+    border-top: 150px solid maroon;
+    border-left: 100px solid pink;
+    /*    border-right: 150px solid red;*/
+}
+
+/*___________________box 26_____________________*/
+
+.box26 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+.box26 .fourth {
+    border-bottom: 50px solid black;
+    border-top: 50px solid lightgrey;
+    border-right: 100px solid grey;
+}
+
+/*___________________box 27_____________________*/
+
+.box27 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.box27 .fourth {
+    border-bottom: 50px solid gold;
+    border-right: 50px solid gold;
+    border-top: 50px solid gold;
+    border-left: 50px solid gold;
+}
+
+/*___________________box 28_____________________*/
+
+.box28 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.box28 .fourth {
+    border-bottom: 100px solid white;
+    border-right: 100px solid pink;
+    border-top: 100px solid white;
+    border-left: 100px solid pink;
+}
+
+/*___________________box 29_____________________*/
+
+.box29 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+}
+.box29 .fourth {
+    border-bottom: 50px solid green;
+    border-right: 75px solid limegreen;
+    border-left: 75px solid limegreen;
+}
+
+/*___________________box 30_____________________*/
+
+.box30 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /*
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+*/
+    border-radius: 50%;
+}
+.box30 .fourth {
+    border-bottom: 20px solid rgba(255, 0, 0, 0.7);
+    border-top: 150px solid rgba(255, 192, 203, 0.50);
+    border-right: 0px solid limegreen;
+    border-left: 0px solid limegreen;
+}
+
+/*___________________box 31_____________________*/
+
+.box31 .content div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /*    border-radius: 50%;*/
+}
+.box31 .third {
+    position: absolute;
+    background-image: linear-gradient( 180deg, #EECE13 10%, #B210FF 100%);
+}
+.box31 .fourth {
+    position: absolute;
+    border-bottom: 200px solid rgba(0, 0, 0, 0);
+    border-top: 50px solid white;
+    border-left: 150px solid white;
+    border-right: 150px solid white;
+}
+
+/*___________________box 32_____________________*/
+
+.box32 .content div {
+    width: 100px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+.box32 .third {
+    position: absolute;
+    background-image: linear-gradient( 180deg, #EECE13 10%, #B210FF 100%);
+}
+.box32 .fourth {
+    position: absolute;
+    border-bottom: 50px solid white;
+    border-top: 200px solid rgba(0, 0, 0, 0);
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+}
+.box32 .second {
+    position: absolute;
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-top: 200px solid #EECE13;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    transform-origin: 50% 75%;
+    transform: rotate(28deg) translateX(-12px) translateY(2px);
+}
+.box32 .first {
+    position: absolute;
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-top: 200px solid #EECE13;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    transform: rotate(-28deg) translateX(-23px) translateY(-8px);
+}
+
+/*
+.box32 .sixth {
+    position: absolute;
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-top: 200px solid #ee13b3;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    transform: translateX(111px) rotate(152deg) translateY(93px);
+}
+.box32 .seventh {
+    position: absolute;
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-top: 200px solid #ee13b3;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    transform: translateX(-111px) rotate(208deg) translateY(93px);
+}
+*/
+
+
+/*___________________box 33_____________________*/
+
+.box33 .content div {
+    margin: 0 auto;
+    /*    border-radius: 50%;*/
+    position: absolute;
+}
+.box33 .first {
+    width: 100px;
+    height: 160px;
+    background-color: red;
+    transform-origin: 0 100%;
+    transform: rotate(45deg) translateX(-29.2px);
+    border-radius: 50px 50px 0 0;
+}
+.box33 .second {
+    width: 100px;
+    height: 160px;
+    background-color: antiquewhite;
+    transform-origin: 100% 100%;
+    transform: rotate(-45deg) translateX(29px);
+    border-radius: 50px 50px 0 0;
+}
+.box33 .third {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transform-origin: 0 100%;
+    transform: rotate(45deg) translateX(42px) translateY(56px);
+}
+.box33 .fourth {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transform-origin: 0 100%;
+    transform: rotate(45deg) translateX(-8px) translateY(6px);
+}
+.box33 .fifth {
+    width: 25px;
+    height: 100px;
+    background-color: red;
+    transform: translateY(-40px);
+}
+
+/*___________________box 90_____________________*/
+
+.box90 .content div {
+    width: 100px;
+    height: 100px;
+    /*    border-radius: 50%;*/
+}
+.box90 .first {
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-left: 50px solid orange;
+    border-right: 50px solid rgba(0, 0, 0, 0);
+}
+.box90 .second {
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-top: 50px solid pink;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+}
+.box90 .third {
+    border-bottom: 50px solid rgba(0, 0, 0, 0);
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid green;
+}
+.box90 .fourth {
+    border-bottom: 50px solid aqua;
+    border-top: 50px solid rgba(0, 0, 0, 0);
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+}
+
+/*___________________box 99_____________________*/
+
+.box99 .content {
+    background-color: white;
+    width: 320px;
+    height: 320px;
+    display: block;
+    position: relative
+}
+
+/*___________________MediaQuery_____________________*/
+
+@media only screen and (min-width: 1000px) {
+    body {
+        /*        background-color: lightpink;*/
+    }
+    nav a {
+        color: aqua;
+        margin: 1rem;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    section {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .content {
+        background-color: white;
+        width: 400px;
+        height: 400px;
+    }
+    .box {
+        width: 400px;
+        margin: 0.2rem 1rem 1rem 1rem;
+    }
+}
